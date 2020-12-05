@@ -11,9 +11,6 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
-        val username = intent.getStringExtra(ConstantsL.USER_NAME)
-        val tv_name = findViewById<TextView>(R.id.tv_name)
-        tv_name.text = username
         val totalQuestions = intent.getIntExtra(ConstantsL.TOTAL_QUESTIONS, 0)
         val correctAnswers = intent.getIntExtra(ConstantsL.CORRECT_ANSWERS, 0)
 

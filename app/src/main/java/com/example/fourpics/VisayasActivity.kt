@@ -84,7 +84,7 @@ class VisayasActivity : AppCompatActivity(), View.OnClickListener {
         options.add(3, tv_option4)
 
         for(option in options){
-            option.setTextColor(Color.parseColor("#7A8089"))
+            option.setTextColor(Color.parseColor("#886868"))
             option.typeface = Typeface.DEFAULT
             option.background = ContextCompat.getDrawable(this, R.drawable.default_option_border_bg)
         }
@@ -171,7 +171,7 @@ class VisayasActivity : AppCompatActivity(), View.OnClickListener {
         defaultOptionsView()
         mSelectedOptionPosition = selectedOptionNum
 
-        tv.setTextColor(Color.parseColor("#363A43"))
+        tv.setTextColor(Color.parseColor("#886868"))
         tv.setTypeface(tv.typeface, Typeface.BOLD)
         tv.background = ContextCompat.getDrawable(this, R.drawable.selected_option_border_bg)
     }

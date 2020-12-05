@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:background="@drawable/background"
+    android:background="@drawable/backg2"
     android:padding="20dp"
     tools:context=".MainActivity">
 
@@ -16,10 +16,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:text="Result"
-        android:textColor="@android:color/white"
+        android:textColor="#886868"
         android:textSize="25dp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/iv_trophy"
@@ -34,21 +33,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="CONGRATULATIONS!!!"
-        android:textColor="@android:color/white"
+        android:textColor="#886868"
         android:textSize="30dp"
-        android:textStyle="bold"
-        />
-
-    <TextView
-        android:id="@+id/tv_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:text="Username"
-        android:textColor="@android:color/white"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tv_score"
@@ -56,31 +43,30 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="Your Score is 9 out of 10"
-        android:textColor="@android:color/secondary_text_dark"
-        android:textSize="20sp"
-        />
+        android:textColor="#886868"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btn_history"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:background="@color/white"
+        android:background="#886868"
         android:text="DO YOU WANT TO SEE THE HISTORY?"
-        android:textColor="@color/purple_500"
+        android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:backgroundTint="#FFFFFF" />
+        app:backgroundTint="#886868" />
 
     <Button
         android:id="@+id/btn_finish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:background="@color/white"
+        android:background="#886868"
         android:text="FINISH"
-        android:textColor="@color/purple_500"
+        android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:backgroundTint="#FFFFFF" />
+        app:backgroundTint="#886868" />
 </LinearLayout>

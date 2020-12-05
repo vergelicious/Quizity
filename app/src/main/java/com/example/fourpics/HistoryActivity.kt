@@ -3,16 +3,25 @@ package com.example.fourpics
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
 
-class HistoryActivity : AppCompatActivity() {
+class HistoryActivity : AppCompatActivity(){
+
+    private var mCurrentPosition: Int = 1
+    private var mQuestionsList: ArrayList<LuzonQuestions>? = null
+    private var mSelectedOptionPosition: Int = 0
+    private var mCorrectAnswers: Int = 0
+    private var mUserName: String? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_history)
 
-        val questionsList = ConstantsH.getHistory()
+        val questionsList = Constants.getQuestions()
         Log.i("Questions Size", "${questionsList.size}")
 
         val currentPosition = 1
@@ -24,8 +33,8 @@ class HistoryActivity : AppCompatActivity() {
         val tv_progress = findViewById<TextView>(R.id.tv_progress)
         tv_progress.text = "$currentPosition" + "/" + progressBar.max
 
-        val tv_question1 = findViewById<TextView>(R.id.tv_question1)
-        tv_question1.text = question!!.question
+        val tv_question = findViewById<TextView>(R.id.tv_question)
+        tv_question.text = question!!.question
 
         val iv_image = findViewById<ImageView>(R.id.iv_image)
         iv_image.setImageResource(question.image)
@@ -34,5 +43,7 @@ class HistoryActivity : AppCompatActivity() {
         tv_option1.text = question.optionOne
         val tv_option2 = findViewById<TextView>(R.id.tv_option2)
         tv_option2.text = question.optionTwo
+
     }
+
 }
