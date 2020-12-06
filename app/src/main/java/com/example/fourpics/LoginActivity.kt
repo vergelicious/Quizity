@@ -19,7 +19,7 @@ class LoginActivity : AppCompatActivity() {
             val pass = findViewById<EditText>(R.id.password)
             val password = pass.text.toString();
 
-            if (username.equals("") && password.equals("")) {
+            if (username.equals("reccalyn") && password.equals("1234")) {
                 intent.putExtra(ConstantsL.USER_NAME, username.equals(""))
                 login1()
 
