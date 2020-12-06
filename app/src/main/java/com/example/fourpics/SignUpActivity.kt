@@ -56,13 +56,13 @@ class SignUpActivity : AppCompatActivity() {
             if(button.text.toString() == "Add"){
                 val restaurant = SignUpModels(name = name , email = email ,password =  password, confirmpassword = confirmpassword  )
                 if(signUpHandler.create(restaurant)){
-                    Toast.makeText(this, "Youtube video added.", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Your account has been added.", Toast.LENGTH_SHORT).show()
                 }
                 clear()
             } else if(button.text.toString() == "Update") {
                 val restaurant = SignUpModels( id = youtubeVideoGettingEdited.id, name = name , email = email ,password =  password, confirmpassword = confirmpassword )
                 if(signUpHandler.update(restaurant)){
-                    Toast.makeText(this, "Youtube video updated.", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Your account has been updated.", Toast.LENGTH_SHORT).show()
                 }
                 clear()
             }
@@ -93,7 +93,7 @@ class SignUpActivity : AppCompatActivity() {
             }
             R.id.deleteYoutube -> {
                 if (signUpHandler.delete(youtubeVideos[info.position])){
-                    Toast.makeText(this, "Youtube video updated", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Your account has been updated", Toast.LENGTH_SHORT).show()
                 }
                 return true
             }
